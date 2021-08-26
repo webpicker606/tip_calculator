@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h2 class="title">spli <br />tier</h2>
+
+    <div class="total-card">
+      <div class="left-card">
+        <label for="bill-amt">bill</label>
+        <div class="bill-div inp">
+          <i class="fas fa-dollar-sign"></i>
+          <input type="number" name="bill-amt" value="0" />
+        </div>
+        <label for="tip-butt">select tip%</label><br />
+        <a href="#" data-value="5" class="tip">5%</a>
+        <a href="#" data-value="10" class="tip">10%</a>
+        <a href="#" data-value="15" class="tip">15%</a>
+        <a href="#" data-value="20" class="tip">20%</a>
+        <a href="#" data-value="25" class="tip">25%</a>
+        <input
+          type="number"
+          name="custom-tip"
+          placeholder="custom"
+          class="tip"
+          value="0"
+        />
+        <div class="no-people">
+          <h2>no of people</h2>
+          <h4 class="zero">can't be zero</h4>
+        </div>
+        <div class="no-people-inp inp">
+          <i class="fas fa-user"></i>
+          <input type="number" name="no-people" value="0" />
+        </div>
+      </div>
+      <div class="right-card">
+        <div class="tip-amt container">
+          <div class="tip-deatils">
+            <div class="details">
+              <h2>tip amt</h2>
+              <h4 class="per">/person</h4>
+            </div>
+          </div>
+          <div class="tip-amt amt">$0.00</div>
+        </div>
+        <div class="bill-amt container">
+          <div class="bill-details">
+            <h2>bill amt</h2>
+            <h4 class="per">/person</h4>
+          </div>
+          <div class="bill-amt amt">$0.00</div>
+        </div>
+        <a href="#" class="reset">reset</a>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="simple"
+        >Frontend Mentor</a
+      >Coded by <a class="simple" href="#">hamsananth</a>.
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
