@@ -19,9 +19,7 @@ function set_tip(e) {
   tip_percentage = e.currentTarget.dataset.value;
   e.currentTarget.classList.toggle("active");
 }
-custom_tip_inp.addEventListener("keyup", () => {
-  tip_percentage = parseInt(custom_tip_inp.value);
-});
+custom_tip_inp.addEventListener("keyup", calculate);
 preset_tip_buttons.forEach((button) => {
   button.addEventListener("click", set_tip);
 });
