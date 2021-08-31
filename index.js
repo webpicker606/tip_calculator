@@ -29,3 +29,4 @@ window.addEventListener("keydown", calculate);
 //hi
 //bye
 ///@12.02
+console.log('hi');
